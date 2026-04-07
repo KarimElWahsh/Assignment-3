@@ -17,7 +17,7 @@ Part3: Node Internals:
    - Event Loop : Handles between main thread and event queue by checking if there asynchronous operations exists
 
 5. What is the Node.js Thread Pool and How to Set the Thread Pool Size?
-   - it exists in LIBUV it enables multi threads by default is 4 ,to set the size use in terminal : .env set_thread_size = "number needed"
+   - it exists in LIBUV it enables multi threads by default is 4 ,to set the size use in terminal : $$env:UV_TREADPOOL_SIZE = "4"
 
 6. How Does Node.js Handle Blocking and Non-Blocking Code Execution?
    - by using event loop if it find non-block operations it sends it to LIBUV if needed to turing it back to main thread after executing th call stack

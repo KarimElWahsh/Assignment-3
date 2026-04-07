@@ -1,11 +1,10 @@
 const fs = require("fs");
 const zlib = require("zlib");
-
 //1
 {
   const readStream = fs.createReadStream("big.txt");
   readStream.on("data", (chunk) => {
-    //console.log(chunk);
+    console.log(chunk);
   });
 }
 //2
